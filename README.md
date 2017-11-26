@@ -1,4 +1,5 @@
-# esp32 projects 
+# esp32-microPython
+ 
 #### Dcoumenting my experince with micro Python and Adafruit ESP32 feather HUZZAH32 mcu
 
 contains micro python code snippets for ESP32 MCU**
