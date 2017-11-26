@@ -7,4 +7,3 @@ for i in range(15):
     time.sleep_ms(400)
     pin13.value(0)
     time.sleep_ms(500)
-

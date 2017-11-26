@@ -1,5 +1,7 @@
-#  module to connect to network -  esp32
-
+'''
+  module to connect to network -  esp32
+  
+'''
 def connect():
     import network
  
@@ -8,16 +10,15 @@ def connect():
  
     station = network.WLAN(network.STA_IF)
  
-    if station.isconnected() == True:
+    if station.isconnected():
         print("Already connected")
         return
  
     station.active(True)
     station.connect(ssid, password)
  
-    while station.isconnected() == False:
+    while not station.isconnected():
         pass
  
     print("Connection successful")
     print(station.ifconfig())
-
